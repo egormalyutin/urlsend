@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.static("views"))
 
-PORT = 8080
+const PORT = process.env.PORT || 5000;
 
 app.get("/data", function(req, res) {
 	res.send("succ")
